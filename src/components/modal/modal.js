@@ -38,7 +38,7 @@ const Modal = ({ handleClose, show }) => {
                     </svg>
                 </div>
                 <div className="modal-container">
-                    <div className="product-wrap inner">
+                    <div className="product-wrap max-w-[120rem] mx-auto">
                         <div className="product-slider">
                             <div className="product-slider__main">
                                 <img
