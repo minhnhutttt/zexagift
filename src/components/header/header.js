@@ -12,7 +12,7 @@ const Header = () => {
 
   const location = useLocation()
   const isCartinPage = location.pathname === '/cartin'
-  console.log(isCartinPage);
+  
   useEffect(() => {
     // Fixed header
     const header = document.querySelector('#header')
