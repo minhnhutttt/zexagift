@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react"
-import { StaticImage } from 'gatsby-plugin-image';
 
-import { Link } from "gatsby"
 import Modal from "../modal/modal";
+import Title from "../title";
+import RankingItem from "./rankingItem";
 
 const Ranking = () => {
     const [showModal, setShowModal] = useState(false)
@@ -23,64 +23,15 @@ const Ranking = () => {
     }
     return (
         <>
-            <section className="section">
-                <div className="inner">
-                    <h2 className="section-title">RANKING<span>人気商品ランキング</span></h2>
-                    <div className="list-box list-box--col-3">
-                        <div className="list-box__item">
-                            <figure className="list-box__item--thumb">
-                                <Link to="#">
-                                    <StaticImage src="../../images/sample/sample01.jpeg" alt="" />
-                                </Link>
-                                <button className="list-box__item--thumb--btn modal-btn" onClick={handleShowModal} data-modal="modal01"></button>
-                            </figure>
-                            <p className="list-box__item--title"><Link to="#">オリジナルVRゴーグル</Link></p>
-                            <p className="list-box__item--price">¥1,980 JPY</p>
-                        </div>
-                        <div className="list-box__item">
-                            <figure className="list-box__item--thumb">
-                                <Link to="#">
-                                    <StaticImage src="../../images/sample/sample01.jpeg" alt="" />
-                                    <StaticImage src="../../images/sample/sample02.jpeg" alt="" />
-                                </Link>
-                                <button className="list-box__item--thumb--btn modal-btn" data-modal="modal02"></button>
-                            </figure>
-                            <p className="list-box__item--title"><Link to="#">オリジナルVRゴーグル</Link></p>
-                            <p className="list-box__item--price">¥1,980 JPY</p>
-                        </div>
-                        <div className="list-box__item">
-                            <figure className="list-box__item--thumb">
-                                <Link to="#">
-                                    <StaticImage src="../../images/sample/sample01.jpeg" alt="" />
-                                    <StaticImage src="../../images/sample/sample02.jpeg" alt="" />
-                                </Link>
-                                <button className="list-box__item--thumb--btn modal-btn" data-modal="modal03"></button>
-                            </figure>
-                            <p className="list-box__item--title"><Link to="#">オリジナルVRゴーグル</Link></p>
-                            <p className="list-box__item--price">¥1,980 JPY</p>
-                        </div>
-                        <div className="list-box__item">
-                            <figure className="list-box__item--thumb">
-                                <Link to="#">
-                                    <StaticImage src="../../images/sample/sample01.jpeg" alt="" />
-                                    <StaticImage src="../../images/sample/sample02.jpeg" alt="" />
-                                </Link>
-                                <button className="list-box__item--thumb--btn modal-btn" data-modal="modal04"></button>
-                            </figure>
-                            <p className="list-box__item--title"><Link to="#">オリジナルVRゴーグル</Link></p>
-                            <p className="list-box__item--price">¥1,980 JPY</p>
-                        </div>
-                        <div className="list-box__item">
-                            <figure className="list-box__item--thumb">
-                                <Link to="#">
-                                    <StaticImage src="../../images/sample/sample01.jpeg" alt="" />
-                                    <StaticImage src="../../images/sample/sample02.jpeg" alt="" />
-                                </Link>
-                                <button className="list-box__item--thumb--btn modal-btn" data-modal="modal05"></button>
-                            </figure>
-                            <p className="list-box__item--title"><Link to="#">オリジナルVRゴーグル</Link></p>
-                            <p className="list-box__item--price">¥1,980 JPY</p>
-                        </div>
+            <section className="md:mt-40 max-md:mt-32 max-md:px-[5%] max-md:py-0">
+                <div className="max-w-[120rem] mx-auto">
+                    <Title title="RANKING" text="人気商品ランキング" />
+                    <div className="flex flex-wrap max-md:justify-between list-box--col-3 md:[&>*:nth-child(-n+3)]:mt-0 max-md:[&>*:nth-child(-n+3)]:mt-16 max-md:[&>*:nth-child(-n+2)]:mt-0 [&>*:nth-child(3n)]:mr-0">
+                        <RankingItem title="オリジナルVRゴーグル" price="¥1,980 JPY" handleShowModal={handleShowModal} />
+                        <RankingItem title="オリジナルVRゴーグル" price="¥1,980 JPY" handleShowModal={handleShowModal} />
+                        <RankingItem title="オリジナルVRゴーグル" price="¥1,980 JPY" handleShowModal={handleShowModal} />
+                        <RankingItem title="オリジナルVRゴーグル" price="¥1,980 JPY" handleShowModal={handleShowModal} />
+                        <RankingItem title="オリジナルVRゴーグル" price="¥1,980 JPY" handleShowModal={handleShowModal} />
                     </div>
                 </div>
             </section>

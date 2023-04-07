@@ -12,7 +12,7 @@ const DeliveryPage = () => (
                     label: '送料・配送方法について' }
             ]}
         />
-        <div className="page-wrap inner--sm">
+        <div className="page-wrap max-w-[58rem] mx-auto">
             <h1 className="page-head">送料・配送方法について</h1>
             <div className="page-row-2">
                 <div className="page-row-2__body">

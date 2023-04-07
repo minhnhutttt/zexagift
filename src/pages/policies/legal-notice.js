@@ -12,7 +12,7 @@ const LegalNoticePage = () => (
                     label: '特定商取引法に基づく表記' }
             ]}
         />
-        <div className="page-wrap inner--sm">
+        <div className="page-wrap max-w-[58rem] mx-auto">
             <h1 className="page-head">特定商取引法に基づく表記</h1>
             <div className="page-row-2">
                 <h4 className="page-row-2__head">販売業者</h4>

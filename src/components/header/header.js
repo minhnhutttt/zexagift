@@ -34,7 +34,7 @@ const Header = () => {
           header.classList.remove('is-hidden')
         }
       } else {
-        header.classList.remove('pb-8')
+        header.classList.remove('is-fixed')
         body.classList.remove('ovh')
         hamburger.classList.remove('close')
         gNav.classList.remove('is-active')
@@ -55,7 +55,7 @@ const Header = () => {
   return (
     <>
       <header id="header" className="header max-md:px-[5%] sticky z-[100] transition-[0.3s] duration-[ease] top-0 inset-x-0 bg-[#080d1b] [&.is-fixed]:pb-8 [&.is-fixed]:max-md:pb-0 [&.is-hidden]:-translate-y-full">
-        <div className="flex items-center justify-between px-0 py-[2.8rem] max-md:px-0 max-md:py-[1.3rem] inner">
+        <div className="flex items-center justify-between px-0 py-[2.8rem] max-md:px-0 max-md:py-[1.3rem] max-w-[120rem] mx-auto">
           <button type="button" className="mobile-hamburger" onClick={() => setMobileNavOpen(!mobileNavOpen)}>
             <svg className="theme-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect y="6" width="20" height="2" fill="#acacac"></rect>
@@ -145,7 +145,7 @@ const Header = () => {
             </ul>
           </nav>
         </div>
-        <div className="header-bottom flex justify-between inner max-md:hidden">
+        <div className="header-bottom flex justify-between max-w-[120rem] mx-auto max-md:hidden">
           <div className={`vertical-menu group relative flex items-center w-[22.4rem] h-20 cursor-pointer transition-[0.3s] duration-[ease] rounded-[0.8rem] bg-[#acacac] [&.close]:rounded-[0.8rem_0.8rem_0_0] ${navOpen ? 'close' : ''}`} onClick={() => setNavOpen(!navOpen)}>
             <div className="relative w-8 h-full ml-8 mr-[1.6rem] my-0">
               <span className="absolute w-8 h-[0.2rem] transition-[0.3s] duration-[ease] origin-[left_center] left-0 top-[42%] bg-[#080d1b] group-[.close]:rotate-45  group-[.close]:left-[15%] group-[.close]:top-[34%]"></span>

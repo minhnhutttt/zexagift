@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 
 const Pickup = () => (
     <>
-        <section className="front-pickup inner">
+        <section className="front-pickup max-w-[120rem] mx-auto">
             <ul className="front-pickup__nav">
                 <li className="front-pickup__nav--item"><Link to="#">ギフトカード</Link></li>
                 <li className="front-pickup__nav--item"><Link to="#">VRゴーグル</Link></li>

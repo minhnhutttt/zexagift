@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react"
-import { StaticImage } from 'gatsby-plugin-image';
 import Swiper from 'swiper';
 import 'swiper/swiper-bundle.css';
-import { Link } from "gatsby"
+import Title from "../title";
+import CategoryItem from "./categoryItem";
 
 const Category = () => {
     const [swiper, setSwiper] = useState(null);
@@ -47,51 +47,15 @@ const Category = () => {
 
     return (
         <>
-            <section className="section">
-                <div className="inner">
-                    <h2 className="section-title">CATEGORY<span>商品カテゴリー</span></h2>
+            <section className="md:mt-40 max-md:mt-32 max-md:px-[5%] max-md:py-0">
+                <div className="max-w-[120rem] mx-auto">
+                    <Title title="CATEGORY" text="商品カテゴリー" />
                     <div className="swiper">
-                        <div className="list-box list-box--col-4 swiper-wrapper">
-                            <div className="list-box__item swiper-slide">
-                                <Link to="#">
-                                    <figure className="list-box__item--thumb">
-                                        <StaticImage src="../../images/sample/sample01.jpeg" alt="" />
-                                    </figure>
-                                    <p className="list-box__item--title">
-                                        <span>ギフトカード</span>
-                                    </p>
-                                </Link>
-                            </div>
-                            <div className="list-box__item swiper-slide">
-                                <Link to="#">
-                                    <figure className="list-box__item--thumb">
-                                        <StaticImage src="../../images/sample/sample01.jpeg" alt="" />
-                                    </figure>
-                                    <p className="list-box__item--title">
-                                        <span>VRゴーグル</span>
-                                    </p>
-                                </Link>
-                            </div>
-                            <div className="list-box__item swiper-slide">
-                                <Link to="#">
-                                    <figure className="list-box__item--thumb">
-                                        <StaticImage src="../../images/sample/sample01.jpeg" alt="" />
-                                    </figure>
-                                    <p className="list-box__item--title">
-                                        <span>コスメ・スキンケア</span>
-                                    </p>
-                                </Link>
-                            </div>
-                            <div className="list-box__item swiper-slide">
-                                <Link to="#">
-                                    <figure className="list-box__item--thumb">
-                                        <StaticImage src="../../images/sample/sample01.jpeg" alt="" />
-                                    </figure>
-                                    <p className="list-box__item--title">
-                                        <span>雑貨</span>
-                                    </p>
-                                </Link>
-                            </div>
+                        <div className="flex flex-wrap list-box--col-4 md:[&>*:nth-child(-n+4)]:mt-0 [&>*:nth-child(4n)]:mr-0 swiper-wrapper">
+                            <CategoryItem title="ギフトカード" />
+                            <CategoryItem title="VRゴーグル" />
+                            <CategoryItem title="コスメ・スキンケア" />
+                            <CategoryItem title="雑貨" />
                         </div>
                         <div className="swiper-pagination"></div>
                     </div>

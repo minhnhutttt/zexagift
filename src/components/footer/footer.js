@@ -37,21 +37,21 @@ const Footer = () => {
         };
     }, []);
     return (
-        <footer className="footer">
-            <div className="footer-box inner">
-                <div className="footer-box__item">
-                    <div className="footer-box__item--logo">
+        <footer className="mt-40 max-md:mt-32">
+            <div className="flex justify-between px-0 py-32 border-t border-solid border-[rgba(172,172,172,0.3)] max-md:block max-md:px-[5%] max-md:py-8 max-w-[120rem] mx-auto">
+                <div className="flex-[1] max-w-[25%] max-md:max-w-full">
+                    <div className="max-w-[10rem] max-md:inline-block max-md:max-w-[8rem] max-md:align-middle max-md:mt-4 max-md:mb-12 max-md:mx-8">
                         <StaticImage src="../../images/common/footer_logo.png" alt="" />
                     </div>
-                    <p className="footer-box__item--detail">
+                    <p className="text-[1.4rem] leading-[1.4] text-[#acacac] mt-6 max-md:text-[1.3rem] max-md:inline-block max-md:align-middle max-md:mb-0 max-md:mb-12">
                         東京都公安委員会<br />
                         第301002315433号<br />
                         株式会社ゼクサバース
                     </p>
                 </div>
-                <div className="footer-box__item">
-                    <h5 className="footer-box__item--head">SITE MAP</h5>
-                    <ul className="footer-box__item--list footer-box__item--body">
+                <div className="flex-[1] max-w-[25%] max-md:max-w-full">
+                    <h5 className="footer-box__item--head [&.is-open]:max-md:pb-8 font-bold [&.is-open]:max-md:before:rotate-180 text-[1.6rem] relative transition-[padding-bottom] duration-[0.3s] ease-[ease] max-md:px-0 max-md:py-12 max-md:border-t border-solid border-t-[rgba(172,172,172,0.3)]">SITE MAP</h5>
+                    <ul className="mt-[0.8rem] [&>li]max-md::py-[1.3rem] [&>li]:pt-[1.2rem] max-md:overflow-hidden max-md:max-h-0 max-md:transition-[0.5s] max-md:duration-[ease] max-md:opacity-0 max-md:mt-0 footer-box__item--body [&.is-open]:max-md:max-h-[var(--max-height)] [&.is-open]:max-md:opacity-100 [&.is-open]:max-md:mb-8">
                         <li>
                             <Link to="/about/" className="line-btn">ZEXAGIFTについて</Link>
                         </li>
@@ -72,9 +72,9 @@ const Footer = () => {
                         </li>
                     </ul>
                 </div>
-                <div className="footer-box__item">
-                    <h5 className="footer-box__item--head">POLICY</h5>
-                    <ul className="footer-box__item--list footer-box__item--body">
+                <div className="flex-[1] max-w-[25%] max-md:max-w-full">
+                    <h5 className="footer-box__item--head [&.is-open]:max-md:pb-8 font-bold [&.is-open]:max-md:before:rotate-180 text-[1.6rem] relative transition-[padding-bottom] duration-[0.3s] ease-[ease] max-md:px-0 max-md:py-12 max-md:border-t border-solid border-t-[rgba(172,172,172,0.3)]">POLICY</h5>
+                    <ul className="mt-[0.8rem] [&>li]max-md::py-[1.3rem] [&>li]:pt-[1.2rem] max-md:overflow-hidden max-md:max-h-0 max-md:transition-[0.5s] max-md:duration-[ease] max-md:opacity-0 max-md:mt-0 footer-box__item--body [&.is-open]:max-md:max-h-[var(--max-height)] [&.is-open]:max-md:opacity-100 [&.is-open]:max-md:mb-8">
                         <li>
                             <Link to="/policies/privacy-policy" className="line-btn">プライバシーポリシー</Link>
                         </li>
@@ -89,9 +89,9 @@ const Footer = () => {
                         </li>
                     </ul>
                 </div>
-                <div className="footer-box__item">
-                    <h5 className="footer-box__item--head">FOLLOW US</h5>
-                    <ul className="footer-box__item--sns footer-box__item--body">
+                <div className="flex-[1] max-w-[25%] max-md:max-w-full">
+                    <h5 className="footer-box__item--head [&.is-open]:max-md:pb-8 font-bold [&.is-open]:max-md:before:rotate-180 text-[1.6rem] relative transition-[padding-bottom] duration-[0.3s] ease-[ease] max-md:px-0 max-md:py-12 max-md:border-t border-solid border-t-[rgba(172,172,172,0.3)]">FOLLOW US</h5>
+                    <ul className="flex gap-8 mt-8 max-md:mt-4 footer-box__item--body max-md:overflow-hidden max-md:max-h-0 max-md:transition-[0.5s] max-md:duration-[ease] max-md:opacity-0 footer-box__item--body [&.is-open]:max-md:max-h-[var(--max-height)] [&.is-open]:max-md:opacity-100 [&.is-open]:max-md:mb-8">
                         <li>
                             <Link to="https://twitter.com/zexaverse" target="_blank"><StaticImage src="../../images/common/ico_tw.svg" alt="twitter" /></Link>
                         </li>
@@ -104,8 +104,8 @@ const Footer = () => {
                     </ul>
                 </div>
             </div>
-            <div className="footer-copy inner">
-                <p className="footer-copy__content">&copy; 2023 <Link to="/" title="">ZEXAGIFT</Link></p>
+            <div className="px-0 py-8 border-t max-md:text-center max-md:mx-[5%] max-md:my-0 max-md:px-0 max-md:py-12 border-t-[rgba(172,172,172,0.3)] max-w-[120rem] mx-auto">
+                <p className="text-[1.2rem] text-[#acacac]">&copy; 2023 <Link to="/" title="" className='underline text-[#0568d6]'>ZEXAGIFT</Link></p>
             </div>
         </footer>
     )

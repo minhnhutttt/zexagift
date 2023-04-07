@@ -29,17 +29,17 @@ const Modal = ({ handleClose, show }) => {
     const imageUrls = data.allFile.edges.map(({ node }) => node.publicURL)
 
     return (
-        <div className={`modal ${show ? '!flex' : ''}`}>
+        <div className={`hidden fixed z-[100] h-full w-full overflow-auto items-center bg-[rgba(172,172,172,0.3)] left-0 top-0 ${show ? '!flex' : ''}`}>
             <div className="fixed inset-0" onClick={handleClose}></div>
-            <div className="modal-content modal-product">
-                <div className="modal-close" onClick={handleClose}>
+            <div className="max-w-[120rem] w-4/5 relative max-h-[80%] overflow-x-hidden md:overflow-scroll mx-auto my-24 p-16 rounded-[0.8rem] bg-[#080d1b]">
+                <div className="text-5xl cursor-pointer absolute right-8 top-4" onClick={handleClose}>
                     <svg className="theme-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M8.5 10.0563L2.41421 16.1421L3.82843 17.5563L9.91421 11.4706L16.1421 17.6985L17.5563 16.2843L11.3284 10.0563L17.9706 3.41421L16.5563 2L9.91421 8.64214L3.41421 2.14214L2 3.55635L8.5 10.0563Z" fill="#acacac"></path>
                     </svg>
                 </div>
                 <div className="modal-container">
                     <div className="product-wrap max-w-[120rem] mx-auto">
-                        <div className="product-slider">
+                        <div className="product-slider mt-0">
                             <div className="product-slider__main">
                                 <img
                                     src={imageUrls[currentImageIndex]}
@@ -87,9 +87,9 @@ const Modal = ({ handleClose, show }) => {
                                 <p>&nbsp;</p>
                                 <p>VRゴーグルをご購入の際は新しい没入体験ができるアプリ<Link to="https://meta-tours.jp/meta-diver.php" target="_blank" title="メタツアーズ_Meta-Diver" rel="noopener noreferrer" className="link">「Meta-Diver」</Link>をお試しください！</p>
                             </div>
-                            <Link to="#" className="modal-product__btn line-btn">
+                            <Link to="#" className="inline-flex items-center text-[1.6rem] font-semibold mt-16 line-btn">
                                 <span>詳細を表示</span>
-                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" className="max-w-[2rem] opacity-40 ml-2">
                                     <path fillRule="evenodd" clipRule="evenodd" d="M14.0261 8.94868L10.608 5.48679L12.076 4L18 10L12.076 16L10.608 14.5132L14.0261 11.0513H2V8.94868H14.0261Z" fill="#acacac"></path>
                                 </svg>
                             </Link>

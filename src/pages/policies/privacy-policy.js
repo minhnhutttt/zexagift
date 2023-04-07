@@ -13,7 +13,7 @@ const PrivacyPolicyPage = () => (
                 }
             ]}
         />
-        <div className="page-wrap inner--sm">
+        <div className="page-wrap max-w-[58rem] mx-auto">
             <h1 className="page-head">プライバシーポリシー</h1>
             <div className="page-row-2">
                 <h2 className="page-row-2__head--large">1.事業者の名称</h2>

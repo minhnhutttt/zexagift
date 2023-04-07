@@ -28,7 +28,7 @@ const Layout = ({ children }) => {
   return (
     <div className={`${front ? 'front' : ''}`}>
       <Header />
-        <main className="main">{children}</main>
+      <main className="mt-8 max-md:mt-0">{children}</main>
       <Footer />
     </div>
   )

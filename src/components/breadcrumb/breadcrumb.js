@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 
 const Breadcrumb = ({ items }) => {
     return (
-        <div className="breadcrumb inner">
+        <div className="breadcrumb max-w-[120rem] mx-auto">
             <ul className="breadcrumb__list">
                 {items.map((item, index) => (
                     <li className="breadcrumb__list--item" key={index}>

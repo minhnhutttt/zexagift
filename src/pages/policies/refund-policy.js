@@ -13,7 +13,7 @@ const RefundPolicyPage = () => (
                 }
             ]}
         />
-        <div className="page-wrap inner--sm">
+        <div className="page-wrap max-w-[58rem] mx-auto">
             <h1 className="page-head">返金ポリシー</h1>
             <div className="page-row-2">
                 <h4 className="page-row-2__head">【キャンセル・返品・交換について】</h4>

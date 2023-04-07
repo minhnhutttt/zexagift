@@ -3,6 +3,7 @@ import Layout from "../../components/layout"
 import Seo from "../../components/seo"
 import { StaticImage } from 'gatsby-plugin-image';
 import Breadcrumb from "../../components/breadcrumb/breadcrumb"
+import CollectionBoxItem from "../../components/collections/collectionBoxItem";
 
 const CategoryPage = () => (
     <Layout>
@@ -13,12 +14,12 @@ const CategoryPage = () => (
                     label: 'VRゴーグル' }
             ]}
         />
-        <div className="collection-view inner">
+        <div className="collection-view max-w-[120rem] mx-auto">
                 <StaticImage src="../../images/collections/vrgoggles/view_bg01.png" className="collection-view__image" alt="VRゴーグル" />
                 <h1 className="collection-view__title">VRゴーグル</h1>
             </div>
 
-            <div className="category-wrap inner">
+            <div className="category-wrap max-w-[120rem] mx-auto">
                 <div className="collection-head">
                     <div className="mobile-filter-btn">
                         <svg className="theme-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -126,98 +127,11 @@ const CategoryPage = () => (
                     </div>
                     <div className="collection-content">
                         <div className="collection-box">
-                            <div className="collection-box__item">
-                                <a href="#">
-                                    <figure className="collection-box__item--thumb">
-                                        <StaticImage src="../../images/sample/sample01.jpeg" alt="" />
-                                    </figure>
-                                    <p className="collection-box__item--meta">ZEXAGIFT</p>
-                                    <p className="collection-box__item--title">オリジナルVRゴーグル</p>
-                                    <p className="collection-box__item--price">¥1,980 JPY</p>
-                                </a>
-                                <button type="submit" className="collection-box__item--btn" aria-haspopup="dialog">
-                                    <span>カートに入れる</span>
-                                    <div className="loading-overlay hidden">
-                                        <svg aria-hidden="true" focusable="false" role="presentation" className="loading-overlay__spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
-                                            <circle className="loading-overlay__spinner--path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
-                                        </svg>
-                                    </div>
-                                </button>
-                            </div>
-                            <div className="collection-box__item">
-                                <a href="#">
-                                    <figure className="collection-box__item--thumb">
-                                        <StaticImage src="../../images/sample/sample01.jpeg" alt="" />
-                                        <StaticImage src="../../images/sample/sample02.jpeg" alt="" />
-                                    </figure>
-                                    <p className="collection-box__item--meta">ZEXAGIFT</p>
-                                    <p className="collection-box__item--title">オリジナルVRゴーグル</p>
-                                    <p className="collection-box__item--price">¥1,980 JPY</p>
-                                </a>
-                                <button type="submit" className="collection-box__item--btn loading">
-                                    <span>カートに入れる</span>
-                                    <div className="loading-overlay">
-                                        <svg aria-hidden="true" focusable="false" role="presentation" className="loading-overlay__spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
-                                            <circle className="loading-overlay__spinner--path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
-                                        </svg>
-                                    </div>
-                                </button>
-                            </div>
-                            <div className="collection-box__item">
-                                <a href="#">
-                                    <figure className="collection-box__item--thumb">
-                                        <StaticImage src="../../images/sample/sample01.jpeg" alt="" />
-                                        <StaticImage src="../../images/sample/sample02.jpeg" alt="" />
-                                    </figure>
-                                    <p className="collection-box__item--meta">ZEXAGIFT</p>
-                                    <p className="collection-box__item--title">オリジナルVRゴーグル</p>
-                                    <p className="collection-box__item--price">¥1,980 JPY</p>
-                                </a>
-                                <button type="submit" className="collection-box__item--btn" aria-haspopup="dialog">
-                                    <span>カートに入れる</span>
-                                    <div className="loading-overlay hidden">
-                                        <svg aria-hidden="true" focusable="false" role="presentation" className="loading-overlay__spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
-                                            <circle className="loading-overlay__spinner--path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
-                                        </svg>
-                                    </div>
-                                </button>
-                            </div>
-                            <div className="collection-box__item">
-                                <a href="#">
-                                    <figure className="collection-box__item--thumb">
-                                        <StaticImage src="../../images/sample/sample01.jpeg" alt="" />
-                                    </figure>
-                                    <p className="collection-box__item--meta">ZEXAGIFT</p>
-                                    <p className="collection-box__item--title">オリジナルVRゴーグル</p>
-                                    <p className="collection-box__item--price">¥1,980 JPY</p>
-                                </a>
-                                <button type="submit" className="collection-box__item--btn" aria-haspopup="dialog">
-                                    <span>カートに入れる</span>
-                                    <div className="loading-overlay hidden">
-                                        <svg aria-hidden="true" focusable="false" role="presentation" className="loading-overlay__spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
-                                            <circle className="loading-overlay__spinner--path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
-                                        </svg>
-                                    </div>
-                                </button>
-                            </div>
-                            <div className="collection-box__item">
-                                <a href="#">
-                                    <figure className="collection-box__item--thumb">
-                                        <StaticImage src="../../images/sample/sample01.jpeg" alt="" />
-                                    </figure>
-                                    <p className="collection-box__item--meta">ZEXAGIFT</p>
-                                    <p className="collection-box__item--title">オリジナルVRゴーグル</p>
-                                    <p className="collection-box__item--price">¥1,980 JPY</p>
-                                </a>
-                                <button type="submit" className="collection-box__item--btn" aria-haspopup="dialog">
-                                    <span>カートに入れる</span>
-                                    <div className="loading-overlay hidden">
-                                        <svg aria-hidden="true" focusable="false" role="presentation" className="loading-overlay__spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
-                                            <circle className="loading-overlay__spinner--path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
-                                        </svg>
-                                    </div>
-                                </button>
-                            </div>
+                        <CollectionBoxItem title="オリジナルVRゴーグル" meta="ZEXAGIFT" price="¥1,980 JPY" />
+                        <CollectionBoxItem title="オリジナルVRゴーグル" meta="ZEXAGIFT" price="¥1,980 JPY" loading />
+                        <CollectionBoxItem title="オリジナルVRゴーグル" meta="ZEXAGIFT" price="¥1,980 JPY" />
+                        <CollectionBoxItem title="オリジナルVRゴーグル" meta="ZEXAGIFT" price="¥1,980 JPY" />
+                        <CollectionBoxItem title="オリジナルVRゴーグル" meta="ZEXAGIFT" price="¥1,980 JPY" />
                         </div>
                     </div>
                 </div>

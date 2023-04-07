@@ -13,7 +13,7 @@ const ProductPage = () => (
                     label: 'オリジナルVRゴーグル' }
             ]}
         />
-        <div className="product-wrap inner">
+        <div className="product-wrap max-w-[120rem] mx-auto">
                 <div className="product-slider">
                     <div className="product-slider__main">
                         <span className="product-slider__main--ico">
@@ -62,8 +62,7 @@ const ProductPage = () => (
                     <div className="product-detail__description">
                         <h2>ワールドスキャンプロジェクト<br />（WSP）オリジナルVRゴーグル</h2>
                         <h3>
-                            VRアプリ<a href="https://meta-tours.jp/meta-diver.php" title="Meta-Diver" target="_blank" className="link"><span>「Meta‐Diver」</span></a
-                            >を100％で楽しむならこれ！！
+                            VRアプリ<a href="https://meta-tours.jp/meta-diver.php" title="Meta-Diver" target="_blank" className="link"><span>「Meta‐Diver」</span></a>を100％で楽しむならこれ！！
                         </h3>
                         <p>&nbsp;</p>
                         <p>
@@ -80,7 +79,7 @@ const ProductPage = () => (
                 </div>
             </div>
 
-            <div className="product-exp inner">
+            <div className="product-exp max-w-[120rem] mx-auto">
                 <dl className="product-exp__box">
                     <dt className="product-exp__summary ac-summary">
                         <h4 className="product-exp__summary--head">
@@ -129,6 +128,21 @@ const ProductPage = () => (
                     </dd>
                 </dl>
             </div>
+        <div id="modal01" class="modal">
+            <div class="max-w-[120rem] w-4/5 relative max-h-[80%] overflow-x-hidden md:overflow-scroll mx-auto my-24 p-16 rounded-[0.8rem] bg-[#080d1b]">
+                <div class="text-5xl cursor-pointer absolute right-8 top-4">
+                    <svg class="theme-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.5 10.0563L2.41421 16.1421L3.82843 17.5563L9.91421 11.4706L16.1421 17.6985L17.5563 16.2843L11.3284 10.0563L17.9706 3.41421L16.5563 2L9.91421 8.64214L3.41421 2.14214L2 3.55635L8.5 10.0563Z" fill="#acacac"></path>
+                    </svg>
+                </div>
+                <div class="modal-content__body">
+                    <span class="block overflow-hidden rounded-[0.8rem] w-4/5 max-w-[70rem] mx-auto my-12 max-md:block max-md:overflow-hidden max-md:mx-0 max-md:my-8 max-md:rounded-[0.8rem]"><img src="/img/sample/sample01.jpeg" /></span>
+                    <span class="block overflow-hidden rounded-[0.8rem] w-4/5 max-w-[70rem] mx-auto my-12 max-md:block max-md:overflow-hidden max-md:mx-0 max-md:my-8 max-md:rounded-[0.8rem]"><img src="/img/sample/sample01.jpeg" /></span>
+                    <span class="block overflow-hidden rounded-[0.8rem] w-4/5 max-w-[70rem] mx-auto my-12 max-md:block max-md:overflow-hidden max-md:mx-0 max-md:my-8 max-md:rounded-[0.8rem]"><img src="/img/sample/sample01.jpeg" /></span>
+                    <span class="block overflow-hidden rounded-[0.8rem] w-4/5 max-w-[70rem] mx-auto my-12 max-md:block max-md:overflow-hidden max-md:mx-0 max-md:my-8 max-md:rounded-[0.8rem]"><img src="/img/sample/sample01.jpeg" /></span>
+                </div>
+            </div>
+        </div>
     </Layout>
 )
 
