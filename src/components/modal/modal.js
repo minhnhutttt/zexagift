@@ -87,9 +87,9 @@ const Modal = ({ handleClose, show }) => {
                                 <p>&nbsp;</p>
                                 <p>VRゴーグルをご購入の際は新しい没入体験ができるアプリ<Link to="https://meta-tours.jp/meta-diver.php" target="_blank" title="メタツアーズ_Meta-Diver" rel="noopener noreferrer" className="link">「Meta-Diver」</Link>をお試しください！</p>
                             </div>
-                            <Link to="#" className="inline-flex items-center text-[1.6rem] font-semibold mt-16 line-btn">
+                            <Link to="#" className="group inline-flex items-center text-[1.6rem] font-semibold mt-16 relative hover:before:scale-[1] before:content-[''] before:absolute before:w-full before:h-px before:transition-[0.3s] before:duration-[ease] before:origin-[left_center] before:scale-x-0 before:scale-y-100 before:left-0 before:top-[calc(100%+3px)] before:bg-[#acacac]">
                                 <span>詳細を表示</span>
-                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" className="max-w-[2rem] opacity-40 ml-2">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" className="group-hover:opacity-100 max-w-[2rem] opacity-40 ml-2">
                                     <path fillRule="evenodd" clipRule="evenodd" d="M14.0261 8.94868L10.608 5.48679L12.076 4L18 10L12.076 16L10.608 14.5132L14.0261 11.0513H2V8.94868H14.0261Z" fill="#acacac"></path>
                                 </svg>
                             </Link>

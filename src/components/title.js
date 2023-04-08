@@ -1,5 +1,4 @@
 import React from "react"
-import 'swiper/swiper-bundle.css';
 
 const Title = ({title, text}) => {
 

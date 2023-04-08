@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 
 import { Link } from "gatsby"
+import Button from '../Button';
 
 const Footer = () => {
     const windowSm = 768;
@@ -53,22 +54,22 @@ const Footer = () => {
                     <h5 className="footer-box__item--head [&.is-open]:max-md:pb-8 font-bold [&.is-open]:max-md:before:rotate-180 text-[1.6rem] relative transition-[padding-bottom] duration-[0.3s] ease-[ease] max-md:px-0 max-md:py-12 max-md:border-t border-solid border-t-[rgba(172,172,172,0.3)]">SITE MAP</h5>
                     <ul className="mt-[0.8rem] [&>li]max-md::py-[1.3rem] [&>li]:pt-[1.2rem] max-md:overflow-hidden max-md:max-h-0 max-md:transition-[0.5s] max-md:duration-[ease] max-md:opacity-0 max-md:mt-0 footer-box__item--body [&.is-open]:max-md:max-h-[var(--max-height)] [&.is-open]:max-md:opacity-100 [&.is-open]:max-md:mb-8">
                         <li>
-                            <Link to="/about/" className="line-btn">ZEXAGIFTについて</Link>
+                            <Button to="/about/">ZEXAGIFTについて</Button>
                         </li>
                         <li>
-                            <Link to="/collections/" className="line-btn">商品カテゴリ</Link>
+                            <Button to="/collections/">商品カテゴリ</Button>
                         </li>
                         <li>
-                            <Link to="#" className="line-btn">新着情報</Link>
+                            <Button to="#">新着情報</Button>
                         </li>
                         <li>
-                            <Link to="#" className="line-btn">BLOG</Link>
+                            <Button to="#">BLOG</Button>
                         </li>
                         <li>
-                            <Link to="/faq/" className="line-btn">よくある質問</Link>
+                            <Button to="/faq/">よくある質問</Button>
                         </li>
                         <li>
-                            <Link to="#" className="line-btn">お問い合わせ</Link>
+                            <Button to="#">お問い合わせ</Button>
                         </li>
                     </ul>
                 </div>
@@ -76,16 +77,16 @@ const Footer = () => {
                     <h5 className="footer-box__item--head [&.is-open]:max-md:pb-8 font-bold [&.is-open]:max-md:before:rotate-180 text-[1.6rem] relative transition-[padding-bottom] duration-[0.3s] ease-[ease] max-md:px-0 max-md:py-12 max-md:border-t border-solid border-t-[rgba(172,172,172,0.3)]">POLICY</h5>
                     <ul className="mt-[0.8rem] [&>li]max-md::py-[1.3rem] [&>li]:pt-[1.2rem] max-md:overflow-hidden max-md:max-h-0 max-md:transition-[0.5s] max-md:duration-[ease] max-md:opacity-0 max-md:mt-0 footer-box__item--body [&.is-open]:max-md:max-h-[var(--max-height)] [&.is-open]:max-md:opacity-100 [&.is-open]:max-md:mb-8">
                         <li>
-                            <Link to="/policies/privacy-policy" className="line-btn">プライバシーポリシー</Link>
+                            <Button to="/policies/privacy-policy">プライバシーポリシー</Button>
                         </li>
                         <li>
-                            <Link to="/policies/refund-policy" className="line-btn">返金ポリシー</Link>
+                            <Button to="/policies/refund-policy">返金ポリシー</Button>
                         </li>
                         <li>
-                            <Link to="/policies/delivery" className="line-btn">送料について</Link>
+                            <Button to="/policies/delivery">送料について</Button>
                         </li>
                         <li>
-                            <Link to="/policies/legal-notice" className="line-btn">特定商取引法に基づく表記</Link>
+                            <Button to="/policies/legal-notice">特定商取引法に基づく表記</Button>
                         </li>
                     </ul>
                 </div>

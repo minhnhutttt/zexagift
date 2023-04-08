@@ -81,7 +81,7 @@ const ProductPage = () => (
 
             <div className="product-exp max-w-[120rem] mx-auto">
                 <dl className="product-exp__box">
-                    <dt className="product-exp__summary ac-summary">
+                    <dt className="product-exp__summary ac-summary hover:before:opacity-100 [&.is-open]:before:rotate-180 [&.is-open]:pb-8 before:content-[''] before:absolute before:w-[1.2rem] before:h-[1.2rem] before:opacity-40 before:transition-opacity before:duration-[0.3s] before:ease-[ease] before:right-0 before:top-[0.8rem] transition-[0.3s] duration-[ease] relative cursor-pointer pb-12">
                         <h4 className="product-exp__summary--head">
                             <span>
                                 <svg className="theme-icon" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -93,7 +93,7 @@ const ProductPage = () => (
                             送料・配送方法について
                         </h4>
                     </dt>
-                    <dd className="product-exp__content ac-content">
+                    <dd className="product-exp__content ac-content transition-[0.3s] duration-[ease] overflow-hidden max-h-0 opacity-0 [&.is-open]:max-h-[var(--max-height)] [&.is-open]:opacity-100">
                         <p>商品・送料につきましては、税率の10％が適用されます。</p>
                         <p>1配送先につき 880円 (税込)頂戴しております。</p>
                         <p>但し、北海道・沖縄・離島は別途料金となっております。</p>
@@ -106,7 +106,7 @@ const ProductPage = () => (
                     </dd>
                 </dl>
                 <dl className="product-exp__box">
-                    <dt className="product-exp__summary ac-summary">
+                    <dt className="product-exp__summary ac-summary hover:before:opacity-100 [&.is-open]:before:rotate-180 [&.is-open]:pb-8 before:content-[''] before:absolute before:w-[1.2rem] before:h-[1.2rem] before:opacity-40 before:transition-opacity before:duration-[0.3s] before:ease-[ease] before:right-0 before:top-[0.8rem] transition-[0.3s] duration-[ease] relative cursor-pointer pb-12">
                         <h4 className="product-exp__summary--head">
                             <span>
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="12px" height="10px">
@@ -122,7 +122,7 @@ const ProductPage = () => (
                             お支払い方法について
                         </h4>
                     </dt>
-                    <dd className="product-exp__content ac-content">
+                    <dd className="product-exp__content ac-content transition-[0.3s] duration-[ease] overflow-hidden max-h-0 opacity-0 [&.is-open]:max-h-[var(--max-height)] [&.is-open]:opacity-100">
                         <p>色んな決済方法で便利！</p>
                         <p>お支払いは、クレジットカード決済・Apple Pay・Google Pay・Shop Pay・PayPalの中からご選択下さい。</p>
                     </dd>

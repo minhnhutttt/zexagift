@@ -2,6 +2,7 @@ import React, { useEffect , useState} from "react"
 import { StaticImage } from 'gatsby-plugin-image';
 import { useLocation } from '@reach/router'
 import { Link } from "gatsby"
+import Button from '../Button';
 import CartDrawer from "../cartDrawer/cartDrawer";
 
 const Header = () => {
@@ -113,22 +114,22 @@ const Header = () => {
             </div>
             <ul className="flex items-center justify-end gap-8 max-md:block max-md:gap-0 max-md:w-full max-md:px-[5%] max-md:py-0">
               <li className="max-md:px-0 max-md:py-[1.3rem]">
-                <Link to="/about/">ZEXAGIFTについて</Link>
+                <Button to="/about/">ZEXAGIFTについて</Button>
               </li>
               <li className="max-md:px-0 max-md:py-[1.3rem]">
-                <Link to="/collections/" className="line-btn">商品カテゴリ</Link>
+                <Button to="/collections/">商品カテゴリ</Button>
               </li>
               <li className="max-md:px-0 max-md:py-[1.3rem]">
-                <Link to="#" className="line-btn">新着情報</Link>
+                <Button to="#">新着情報</Button>
               </li>
               <li className="max-md:px-0 max-md:py-[1.3rem]">
-                <Link to="#" className="line-btn">BLOG</Link>
+                <Button to="#">BLOG</Button>
               </li>
               <li className="max-md:px-0 max-md:py-[1.3rem]">
-                <Link to="/faq/" className="line-btn">よくある質問</Link>
+                <Button to="/faq/">よくある質問</Button>
               </li>
               <li className="max-md:px-0 max-md:py-[1.3rem]">
-                <Link to="#" className="line-btn">お問い合わせ</Link>
+                <Button to="#">お問い合わせ</Button>
               </li>
             </ul>
             <ul className="flex ml-12 max-md:block max-md:ml-[5%] max-md:mt-8">
