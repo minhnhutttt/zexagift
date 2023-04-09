@@ -14,11 +14,11 @@ const CollectionPage = () => (
                     label: 'コレクション' }
             ]}
         />
-        <div className="page-wrap max-w-[120rem] mx-auto">
-                <div className="category-head">
-                    <h1 className="category-head__title">商品カテゴリ</h1>
-                    <div className="category-head__btn">
-                        <a href="#" className="category-head__btn--link" aria-disabled="true"><span>Shop all</span></a>
+        <div className="mt-40 max-md:mt-24 max-md:px-[5%] max-md:py-0 max-w-[120rem] mx-auto">
+            <div className="flex items-center justify-between mb-24 max-md:mb-20">
+                <h1 className="text-5xl text-[#acacac] max-md:text-[2.6rem]">商品カテゴリ</h1>
+                    <div>
+                    <a href="#" className="font-semibold text-[#494676] relative before:content-[''] before:absolute before:bottom-[-0.3rem] before:h-px before:origin-[left_center] before:transition-[0.3s] before:duration-[ease] before:inset-x-0 hover:before:scale-x-0 hover:before:scale-y-1" aria-disabled="true"><span>Shop all</span></a>
                     </div>
                 </div>
             <div className="flex flex-wrap list-box--col-6 max-md:justify-between md:[&>*:nth-child(-n+6)]:mt-0 max-md:[&>*:nth-child(-n+2)]:mt-0 [&>*:nth-child(6n)]:mr-0">

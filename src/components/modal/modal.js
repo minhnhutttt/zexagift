@@ -38,32 +38,32 @@ const Modal = ({ handleClose, show }) => {
                     </svg>
                 </div>
                 <div className="modal-container">
-                    <div className="product-wrap max-w-[120rem] mx-auto">
-                        <div className="product-slider mt-0">
-                            <div className="product-slider__main">
+                    <div className="flex justify-between relative items-start max-md:block max-md:px-[5%] max-md:py-0 max-w-[120rem] mx-auto">
+                        <div className="flex flex-row-reverse justify-between w-[53%] sticky top-8 max-md:block max-md:w-full max-md:static max-md:top-0 mt-0">
+                            <div className="flex-[1] relative cursor-pointer ml-14 max-md:pointer-events-none max-md:ml-0 max-md:mb-8">
                                 <img
                                     src={imageUrls[currentImageIndex]}
                                     alt=""
-                                    className="product-slider__main--img product-img"
+                                    className="w-full aspect-[1/1] rounded-[0.8rem] product-img"
                                 />
                             </div>
-                            <ul className="product-slider__thumb">
+                            <ul className="w-[6.4rem] block h-auto  max-md:flex max-md:w-auto">
                                 {data.allFile.edges.map(({ node }, index) => (
-                                    <li key={index} className="product-slider__thumb--item">
+                                    <li key={index} className="mb-4  max-md:w-[calc((100%_-_4rem)_/_5)] max-md:mr-4 max-md:mb-4">
                                         <img
                                             src={node.publicURL}
-                                            className="product-slider__thumb--img"
+                                            className="product-slider__thumb--img w-[6.4rem] aspect-[1/1] block rounded-[0.8rem] max-md:w-full max-md:aspect-[1/1] max-md:block max-md:pointer-events-none max-md:rounded-[0.8rem]"
                                             onClick={() => handleImageClick(index)}
                                         />
                                     </li>
                                 ))}
                             </ul>
                         </div>
-                        <div className="product-detail">
-                            <h1 className="product-detail__title">オリジナルVRゴーグル</h1>
-                            <p className="product-detail__price">¥1,980 JPY</p>
-                            <button type="submit" className="product-detail__btn" aria-haspopup="dialog">
-                                <span>カートに入れる</span>
+                        <div className="w-[47%] text-[#acacac] pl-28 max-md:w-auto max-md:mt-24 max-md:pl-0">
+                            <h1 className="text-5xl leading-[1.4] max-md:text-[2.6rem]">オリジナルVRゴーグル</h1>
+                            <p className="text-[2rem] font-semibold mt-8 max-md:mt-8">¥1,980 JPY</p>
+                            <button type="submit" className="appearance-none text-white text-[1.6rem] font-semibold relative cursor-pointer w-full mt-16 px-10 py-[1.3rem] border-[none] before:content-[''] before:absolute before:transition-[-webkit-transform] before:duration-[0.3s] before:ease-[ease] before:transition-transform before:duration-[0.3s] before:ease-[ease] before:rounded-[0.8rem] before:inset-0" aria-haspopup="dialog">
+                                <span className="relative">カートに入れる</span>
                                 <div className="loading-overlay hidden">
                                     <svg aria-hidden="true" focusable="false" role="presentation" className="loading-overlay__spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
                                         <circle className="loading-overlay__spinner--path" fill="none" strokeWidth="6" cx="33" cy="33" r="30"></circle>

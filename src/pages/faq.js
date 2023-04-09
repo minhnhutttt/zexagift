@@ -3,6 +3,7 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Breadcrumb from "../components/breadcrumb/breadcrumb"
 import FaqItem from "../components/faqItem"
+import PageHead from "../components/pageHead"
 
 const FaqPage = () => (
   <Layout>
@@ -12,8 +13,8 @@ const FaqPage = () => (
                 { label: 'ZEXAGIFTについて' }
             ]}
             />
-            <div class="page-wrap max-w-[58rem] mx-auto">
-                <h1 class="page-head">ZEXAGIFTについて</h1>
+            <div class="mt-40 max-md:mt-24 max-md:px-[5%] max-md:py-0 max-w-[58rem] mx-auto">
+                <PageHead>ZEXAGIFTについて</PageHead>
                 <FaqItem
                     q="メガネをしていてもVRゴーグルをつけられますか？"
                     a="メガネをしたままでもVRゴーグルを装着し動画をお楽しみいただけます。"
